@@ -1,0 +1,36 @@
+. first we have to import many libraries for furthur process, with all basic python libraries which will help in various functionality like loading data set, visualissation, text classification through nltk, using cnn for text calssification , keras etc.
+
+
+2. data cleaning is also important in the process.
+
+-Remove numeric and empty text
+-Remove punctuation from texts
+-Convert words to lower case
+-Remove stop words
+-Stemming
+
+First, we will have to restructure the data in a way that can be easily processed and understood by our neural network. We can do this by replacing the words with uniquely identifying numbers. Combined with an "embedding vector", we are able to represent the words in a manner that is both flexible and semantically sensitive.
+We can implement this functionality using NLTK.
+Vectors are used throughout the field of machine learning in the description of algorithms and processes such as the target variable (y) when training an algorithm.
+
+Now we’re ready to build the model. We want an embedding layer, a convolutional layer, and a dense layer to take advantage of all of the deep learning features that can be helpful for our application. With "Keras", we can build the model very simply:
+
+Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research. we can use theano or tenserflow for abckend running, we used tenserflow backend.
+
+Tokenizing raw text data is an important pre-processing step for many NLP methods."tokenization" is “the process of breaking a stream of text up into words, phrases, symbols, or other meaningful elements called tokens.” In the context of actually working through an NLP analysis, this usually translates to converting a string like "My favorite color is blue" to a list or array like ["My", "favorite", "color", "is", "blue"].
+
+In Python, there are a number of methods for quickly tokenizing text. The most naive method for doing this is to simply the split() function associated with Python strings. 
+
+In Python, anonymous function means that a function is without a name. As we already know that def keyword is used to define the normal functions and the "lambda" keyword is used to create anonymous functions.
+
+- we are using glove, an unsupervised algorithm for obtaining vector representation for words. training is performed on aggregated global word-word co- occurrence statstics from and a corpus, reulting representations showcase interesting linear substructures of the word vector space . 
+after applying glove embedding I found 86627 unique tokens and total 400000 word vectors .
+
+
+In cnn we have to use optimization algorithm . it help us to minimize or maximize an objective function (error functio). we are using adam 
+
+"adam"(adaptive moment estimation) = another method that compute adaptive learning rates for each poarameters. 
+
+
+value of accuracy = ~ 0.65
+
